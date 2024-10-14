@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfólio Digital{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo-esgo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo do Portfólio" class="logo">
+            </a>
+
+            <nav class="menu">
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('curriculo') }}">Currículo</a>
+                <a href="{{ url_for('projetos') }}">Projetos</a>
+                <a href="{{ url_for('habilidades') }}">Habilidades</a>
+                <a href="{{ url_for('documentos') }}">Documentos</a>
+                <a href="{{ url_for('certificacoes') }}">Certificações</a>
+                <a href="{{ url_for('contato') }}">Contato</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="imagem-home">
+        <img src="{{ url_for('static', filename='img_home.png') }}" alt="Imagem de entrada do portfólio">
+    </section>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <p><strong>Todos os Direitos Reservados</strong></p>
+    </footer>
+</body>
+</html>
