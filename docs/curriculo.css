@@ -1,0 +1,130 @@
+/* Estilizando o corpo do documento */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8f7; /* Fundo branco com leve toque de verde */
+    margin: 0;
+    padding: 0;
+    color: #3b3b3b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilização do cabeçalho e navegação */
+header {
+    background: linear-gradient(90deg, #a0d1c8, #ffffff); /* Degradê de verde suave para branco */
+    padding: 20px;
+    color: #3b3b3b;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(3, 3, 3, 0.1); /* Sombra suave */
+}
+
+.logo-esgo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: #3b3b3b;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #e0f2f1; /* Fundo verde claro */
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: #b2dfdb; /* Tom mais claro de verde ao passar o mouse */
+    color: #ffb6c1; /* Rosa claro no hover */
+}
+
+/* Estilização da seção de currículo */
+.curriculo-section {
+    background-color: #ffffff;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: left;
+    line-height: 1.8; /* Melhor espaçamento entre linhas */
+}
+
+.curriculo-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #2e5b47; /* Verde mais escuro */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.curriculo-section ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-top: 20px;
+    color: #2e5b47; /* Verde escuro nas listas */
+}
+
+.curriculo-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #3b3b3b;
+}
+
+.curriculo-section p {
+    font-size: 1.2rem;
+    color: #3b3b3b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .curriculo-section {
+        padding: 20px;
+    }
+
+    .curriculo-section h2 {
+        font-size: 2em;
+    }
+
+    .curriculo-section ul li {
+        font-size: 1rem;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #3b3b3b;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
